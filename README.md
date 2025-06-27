@@ -8,6 +8,8 @@
   - numpy
   - pandas
 
+The practice code snippets are on the week 1 folder.
+
 ### Weeks 2 & 3
 - Neural Networks Basics
 - Activation Functions
