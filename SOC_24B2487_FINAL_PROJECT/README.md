@@ -27,6 +27,7 @@ This implementation includes:
 - **Embedding Dimension**: 384
 - **Number of Heads**: 6
 - **Number of Layers**: 6
+- **Batch Size**: 15
 - **Block Size**: 60 (context length)
 - **Dropout Rate**: 0.2
 - **Parameters**: ~10.8M
@@ -35,14 +36,14 @@ This implementation includes:
 ## Requirements
 
 ```
-torch
+torch 
 ```
 
 
 ## Setup
 
-1. Prepare your training data in a file named `input.txt` in the same directory
-2. The model will automatically create character-level vocabulary from your text
+1. Prepare the training data in a file named `input.txt` in the same directory
+2. The model will automatically create character-level vocabulary from the text
 
 ## Usage
 
@@ -114,7 +115,7 @@ The model generates text autoregressively by:
 
 ## Output
 
-During training, you'll see:
+During training:
 
 - Model parameter count
 - Periodic training and validation losses
@@ -131,12 +132,11 @@ During training, you'll see:
 
 ## Customization
 
-To adapt this model for your use case:
+To adapt this model for other use case:
 
-1. Replace `input.txt` with your training data
-2. Adjust hyperparameters based on your dataset size and computational resources
+1. Replace `input.txt` with the training data
+2. Adjust hyperparameters based on the dataset size and computational resources
 3. Modify the generation length and sampling strategy as needed
 
-This implementation serves as an educational example of transformer architecture and can be extended for more sophisticated applications.
 
 
